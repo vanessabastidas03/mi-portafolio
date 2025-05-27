@@ -2,23 +2,6 @@ import { Star, Quote } from "lucide-react";
 import Link from "next/link";
 
 export default function Testimonials() {
-  const testimonials = [
-    {
-      name: "Mideros",
-      role: "Docente de Software",
-      content:
-        "Vanessa demuestra una dedicación excepcional en sus proyectos. Su capacidad para resolver problemas complejos y su atención al detalle la destacan entre sus compañeros.",
-      rating: 5,
-    },
-    {
-      name: "Miguel",
-      role: "Docente de Software",
-      content:
-        "Trabajar con Vanessa ha sido increíble. Su creatividad y habilidades técnicas aportan mucho valor al equipo. Siempre está dispuesta a ayudar.",
-      rating: 5,
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50">
       <header className="bg-white/80 backdrop-blur-sm border-b border-purple-200 shadow-sm">
@@ -84,36 +67,6 @@ export default function Testimonials() {
           <p className="text-lg text-purple-700">
             Lo que dicen sobre mi trabajo y dedicación
           </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="p-6 bg-white/70 backdrop-blur-sm shadow-lg border border-purple-200 hover:shadow-xl transition-all duration-300 rounded-lg"
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <Quote className="w-6 h-6 text-purple-600" />
-                <div className="flex">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                    />
-                  ))}
-                </div>
-              </div>
-              <p className="text-purple-600 leading-relaxed mb-4 italic">
-                &quot;{testimonial.content}&quot;
-              </p>
-              <div className="border-t border-purple-200 pt-4">
-                <h4 className="font-semibold text-purple-800">
-                  {testimonial.name}
-                </h4>
-                <p className="text-sm text-purple-600">{testimonial.role}</p>
-              </div>
-            </div>
-          ))}
         </div>
 
         <div className="mt-16 max-w-2xl mx-auto p-8 bg-white/70 rounded-lg shadow-xl">
