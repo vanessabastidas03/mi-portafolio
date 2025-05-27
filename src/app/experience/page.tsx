@@ -4,54 +4,55 @@ import Link from "next/link";
 export default function Experience() {
   const experiences = [
     {
-      title: "Desarrollo de Proyectos Académicos",
-      organization: "Universidad Cooperativa de Colombia",
-      period: "2022 - Presente",
-      location: "Pasto, Colombia",
+      title: "Proyecto MakeUp Digital",
+      organization: "MakeUp Studio",
+      period: "2024",
+      location: "Remoto",
       description:
-        "Desarrollo de múltiples proyectos de software como parte de mi formación académica, incluyendo aplicaciones web, sistemas de gestión y APIs.",
-      skills: ["JavaScript", "React", "Node.js", "Database Design"],
+        "Desarrollo de una aplicación web interactiva para probar diferentes estilos de maquillaje y simular looks en tiempo real.",
+      skills: ["React", "Canvas API", "UI/UX Design", "Responsive Design"],
     },
     {
-      title: "Participante en Hackathons Estudiantiles",
-      organization: "Eventos Universitarios",
-      period: "2023 - Presente",
-      location: "Regional",
+      title: "Componente LoginCard",
+      organization: "Proyectos Freelance",
+      period: "2023 - 2024",
+      location: "Remoto",
       description:
-        "Participación activa en competencias de programación y desarrollo de software, trabajando en equipos multidisciplinarios.",
+        "Creación de un componente reutilizable de tarjeta de inicio de sesión con validación de formulario y estilos personalizados.",
       skills: [
-        "Trabajo en Equipo",
-        "Resolución de Problemas",
-        "Prototipado Rápido",
+        "JavaScript",
+        "Tailwind CSS",
+        "Form Validation",
+        "Accessibility",
       ],
     },
     {
-      title: "Proyectos de Desarrollo Frontend",
+      title: "API Integración Redes Sociales",
       organization: "Proyectos Personales",
-      period: "2023 - Presente",
+      period: "2024",
       location: "Remoto",
       description:
-        "Creación de interfaces de usuario modernas y responsivas, enfocándome en la experiencia del usuario y las mejores prácticas de desarrollo.",
-      skills: ["HTML/CSS", "Tailwind CSS", "UI/UX Design", "Responsive Design"],
+        "Implementación de una API RESTful para conectar y gestionar publicaciones en múltiples plataformas de redes sociales.",
+      skills: ["Node.js", "Express", "RESTful APIs", "OAuth"],
     },
   ];
 
   const achievements = [
     {
-      title: "Mejor Proyecto de Semestre",
+      title: "UI MakeUp Reconocido",
       description:
-        "Reconocimiento por el desarrollo de una aplicación web innovadora",
+        "Seleccionado como ejemplo destacado de experiencia de usuario en demostraciones de diseño.",
       icon: <Award className="w-5 h-5" />,
     },
     {
-      title: "Participación en Conferencias Tech",
+      title: "LoginCard Popular",
       description:
-        "Asistencia a eventos de tecnología y desarrollo de software",
+        "Más de 1,000 descargas del componente en repositorios públicos.",
       icon: <Users className="w-5 h-5" />,
     },
     {
-      title: "Certificaciones en Desarrollo Web",
-      description: "Cursos completados en plataformas de educación online",
+      title: "API Social Estable",
+      description: "Implementación segura y escalable con autenticación OAuth.",
       icon: <BookOpen className="w-5 h-5" />,
     },
   ];
@@ -103,10 +104,10 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-            Mi Experiencia
+            Proyectos Destacados
           </h2>
           <p className="text-lg text-purple-700">
-            Trayectoria académica y proyectos desarrollados
+            Proyectos de maquillaje digital, LoginCard y API de redes sociales
           </p>
         </div>
 
@@ -179,11 +180,10 @@ export default function Experience() {
 
         <div className="p-8 bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-xl border-0 rounded-lg text-center">
           <Code className="w-12 h-12 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold mb-4">Siempre Aprendiendo</h3>
+          <h3 className="text-2xl font-bold mb-4">Siempre Innovando</h3>
           <p className="text-purple-100 mb-6">
-            Mi experiencia está en constante crecimiento. Cada proyecto es una
-            oportunidad para aprender nuevas tecnologías y mejorar mis
-            habilidades como desarrolladora.
+            Cada proyecto es una oportunidad para explorar nuevas ideas y
+            tecnologías.
           </p>
           <Link href="/projects">
             <button className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors">
