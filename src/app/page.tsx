@@ -1,12 +1,4 @@
-import {
-  Mail,
-  Download,
-  User,
-  FolderOpen,
-  Sparkles,
-  Code,
-  Heart,
-} from "lucide-react";
+import { Mail, User, FolderOpen, Sparkles, Code, Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -101,10 +93,7 @@ export default function Portfolio() {
                       View Projects
                     </button>
                   </Link>
-                  <button className="flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white border-0 shadow-lg transition-all duration-300 hover:shadow-xl px-4 py-2 rounded-lg">
-                    <Download className="w-4 h-4" />
-                    Download CV
-                  </button>
+
                   <Link href="/contact">
                     <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 shadow-lg transition-all duration-300 hover:shadow-xl px-4 py-2 rounded-lg">
                       <Mail className="w-4 h-4" />
