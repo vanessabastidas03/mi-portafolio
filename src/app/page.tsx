@@ -7,6 +7,7 @@ import {
   Code,
   Heart,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Portfolio() {
@@ -114,11 +115,37 @@ export default function Portfolio() {
               </div>
 
               <div className="space-y-6">
-                <div className="p-6 bg-white/70 backdrop-blur-sm shadow-lg border border-purple-200 rounded-lg">
-                  <div className="aspect-square bg-gradient-to-br from-purple-200 to-pink-200 rounded-lg flex items-center justify-center mb-4 shadow-inner">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center shadow-lg">
-                      <Code className="w-8 h-8 text-white" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="p-6 bg-white/70 backdrop-blur-sm shadow-lg border border-purple-200 rounded-lg">
+                    <div className="aspect-square bg-gradient-to-br from-purple-200 to-pink-200 rounded-lg flex items-center justify-center mb-4 shadow-inner">
+                      <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center shadow-lg">
+                        <Code className="w-8 h-8 text-white" />
+                      </div>
                     </div>
+                  </div>
+
+                  <div className="flex flex-col gap-4">
+                    <Image
+                      src="/mifoto_presentacion.jpeg"
+                      alt="Vanessa presentación 1"
+                      width={600}
+                      height={400}
+                      className="rounded-lg shadow-md"
+                    />
+                    <Image
+                      src="/mifoto_presentacion2.jpeg"
+                      alt="Vanessa presentación 2"
+                      width={600}
+                      height={400}
+                      className="rounded-lg shadow-md"
+                    />
+                    <Image
+                      src="/mifoto_presentacion3.jpeg"
+                      alt="Vanessa presentación 3"
+                      width={600}
+                      height={400}
+                      className="rounded-lg shadow-md"
+                    />
                   </div>
                 </div>
 
