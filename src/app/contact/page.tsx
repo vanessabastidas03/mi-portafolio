@@ -135,6 +135,12 @@ export default function Contact() {
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
+                  <Instagram className="w-5 h-5 text-purple-600" />
+                  <span className="text-purple-700">
+                    https://www.instagram.com/__vannx___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-purple-600" />
                   <span className="text-purple-700">+57 314 5784875</span>
                 </div>
