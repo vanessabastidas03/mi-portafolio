@@ -181,7 +181,7 @@ export default function Contact() {
               </h3>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/vanessabastidas"
+                  href="https://github.com/vanessabastidas03/mi-portafolio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all"
