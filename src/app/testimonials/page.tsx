@@ -41,6 +41,12 @@ export default function Testimonials() {
             >
               Contact
             </Link>
+            <Link
+              href="/hobbies"
+              className="text-purple-700 hover:text-purple-900 font-medium transition-colors"
+            >
+              Hobbies
+            </Link>
           </nav>
         </div>
       </header>

@@ -50,6 +50,12 @@ export default function Contact() {
             >
               Contact
             </Link>
+            <Link
+              href="/hobbies"
+              className="text-purple-700 hover:text-purple-900 font-medium transition-colors"
+            >
+              Hobbies
+            </Link>
           </nav>
         </div>
       </header>
@@ -136,9 +142,25 @@ export default function Contact() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Instagram className="w-5 h-5 text-purple-600" />
-                  <span className="text-purple-700">
-                    https://www.instagram.com/__vannx___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
-                  </span>
+                  <a
+                    href="https://www.instagram.com/__vannx___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-700 underline hover:text-purple-900 transition"
+                  >
+                    @__vannx___
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Linkedin className="w-5 h-5 text-purple-600" />
+                  <a
+                    href="https://www.linkedin.com/in/vanessa-bastidas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-700 underline hover:text-purple-900 transition"
+                  >
+                    linkedin.com/in/vanessa-bastidas
+                  </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-purple-600" />
@@ -159,19 +181,25 @@ export default function Contact() {
               </h3>
               <div className="flex gap-4">
                 <a
-                  href="#"
+                  href="https://github.com/vanessabastidas"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/vanessa-bastidas"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/__vannx___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-lg hover:from-pink-600 hover:to-pink-700 transition-all"
                 >
                   <Instagram className="w-5 h-5" />
