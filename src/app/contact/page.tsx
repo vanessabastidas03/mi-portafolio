@@ -130,11 +130,13 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-purple-600" />
-                  <span className="text-purple-700">vanessa@example.com</span>
+                  <span className="text-purple-700">
+                    Vanessa.bastidas@campusucc.edu.co
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-purple-600" />
-                  <span className="text-purple-700">+57 300 123 4567</span>
+                  <span className="text-purple-700">+57 314 5784875</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-purple-600" />
