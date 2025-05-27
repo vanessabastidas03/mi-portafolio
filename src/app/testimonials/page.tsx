@@ -1,5 +1,5 @@
-import { Star, Quote } from "lucide-react"
-import Link from "next/link"
+import { Star, Quote } from "lucide-react";
+import Link from "next/link";
 
 export default function Testimonials() {
   const testimonials = [
@@ -31,11 +31,10 @@ export default function Testimonials() {
         "Vanessa sobresale por su compromiso académico y su capacidad para trabajar bajo presión. Sus proyectos siempre reflejan calidad e innovación.",
       rating: 5,
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50">
-      {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-purple-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
@@ -43,13 +42,17 @@ export default function Testimonials() {
               <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 PORTFOLIO
               </h1>
-              <p className="text-xl text-purple-700 mt-1 font-medium">Vanessa</p>
+              <p className="text-xl text-purple-700 mt-1 font-medium">
+                Vanessa
+              </p>
             </div>
           </div>
 
-          {/* Navigation */}
           <nav className="flex justify-center space-x-8 pb-4">
-            <Link href="/" className="text-purple-700 hover:text-purple-900 font-medium transition-colors">
+            <Link
+              href="/"
+              className="text-purple-700 hover:text-purple-900 font-medium transition-colors"
+            >
               Home
             </Link>
             <Link
@@ -58,10 +61,16 @@ export default function Testimonials() {
             >
               Testimonials
             </Link>
-            <Link href="/experience" className="text-purple-700 hover:text-purple-900 font-medium transition-colors">
+            <Link
+              href="/experience"
+              className="text-purple-700 hover:text-purple-900 font-medium transition-colors"
+            >
               Experience
             </Link>
-            <Link href="/contact" className="text-purple-700 hover:text-purple-900 font-medium transition-colors">
+            <Link
+              href="/contact"
+              className="text-purple-700 hover:text-purple-900 font-medium transition-colors"
+            >
               Contact
             </Link>
           </nav>
@@ -73,7 +82,9 @@ export default function Testimonials() {
           <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
             Testimonios
           </h2>
-          <p className="text-lg text-purple-700">Lo que dicen sobre mi trabajo y dedicación</p>
+          <p className="text-lg text-purple-700">
+            Lo que dicen sobre mi trabajo y dedicación
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -86,13 +97,20 @@ export default function Testimonials() {
                 <Quote className="w-6 h-6 text-purple-600" />
                 <div className="flex">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
               </div>
-              <p className="text-purple-600 leading-relaxed mb-4 italic">"{testimonial.content}"</p>
+              <p className="text-purple-600 leading-relaxed mb-4 italic">
+                "{testimonial.content}"
+              </p>
               <div className="border-t border-purple-200 pt-4">
-                <h4 className="font-semibold text-purple-800">{testimonial.name}</h4>
+                <h4 className="font-semibold text-purple-800">
+                  {testimonial.name}
+                </h4>
                 <p className="text-sm text-purple-600">{testimonial.role}</p>
               </div>
             </div>
@@ -103,8 +121,9 @@ export default function Testimonials() {
           <div className="p-8 bg-gradient-to-br from-purple-500 to-pink-500 text-white shadow-xl border-0 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">¿Trabajaste conmigo?</h3>
             <p className="text-purple-100 mb-6">
-              Si hemos colaborado en algún proyecto, me encantaría conocer tu experiencia. Tu feedback es valioso para
-              mi crecimiento profesional.
+              Si hemos colaborado en algún proyecto, me encantaría conocer tu
+              experiencia. Tu feedback es valioso para mi crecimiento
+              profesional.
             </p>
             <Link href="/contact">
               <button className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors">
@@ -115,5 +134,5 @@ export default function Testimonials() {
         </div>
       </div>
     </div>
-  )
+  );
 }
