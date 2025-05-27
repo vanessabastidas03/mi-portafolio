@@ -104,7 +104,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <p className="text-purple-600 leading-relaxed mb-4 italic">
-                "{testimonial.content}"
+                &quot;{testimonial.content}&quot;
               </p>
               <div className="border-t border-purple-200 pt-4">
                 <h4 className="font-semibold text-purple-800">
@@ -116,7 +116,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Formulario llamativo para dejar un testimonio */}
         <div className="mt-16 max-w-2xl mx-auto p-8 bg-white/70 rounded-lg shadow-xl">
           <h3 className="text-2xl font-bold text-purple-800 mb-4 text-center">
             ¿Quieres dejar tu testimonio?
